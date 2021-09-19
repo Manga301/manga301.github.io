@@ -1,0 +1,8 @@
+.logo-text{
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-brand{
+    color: transparent;
+}
