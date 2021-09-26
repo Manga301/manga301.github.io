@@ -2,6 +2,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+h2{
+    font-size: 2.2rem;
+    
+}
+
 .logo-text{
     font-family: 'Roboto', sans-serif;
     -webkit-text-stroke: 1px #ffffff;
@@ -56,12 +61,25 @@ body{
 
 .nav-item{
     padding: 0 18px;
+  
 }
+
+.navbar-dark .navbar-nav .nav-link{
+    transition: transform 350ms ease, color 350ms ease, -webkit-transform 350ms ease;
+}
+
+.nav-link:hover {
+    -webkit-transform: translate(0px, -4px);
+    -ms-transform: translate(0px, -4px);
+    transform: translate(0px, -4px);
+    color: #9c9c9c;
+  }
 
 .nav-link{
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
+    
 }
 
 /* Download Buttons */
@@ -69,17 +87,100 @@ body{
     margin: 5% 3% 5% 0; /* Top | Right | Left | Bottom */ 
 }
 
+/* Features Section */
+
 #features{
-    padding: 15% 15%;
+    padding: 8% 14%;
     background-color: #efefef;
     text-align: center;
 }
 
 .feature-block{
     color: #919191;
+    border: 1px solid #e7e7e7;
 }
 
 .feature-fa{
-    font-size: 28px;
+    font-size: 48px;
+    padding: 18px;
+    color: #4d4d4d;
+    transition: transform 350ms ease, color 350ms ease, -webkit-transform 350ms ease;
     
 }
+
+.feature-fa:hover{
+    -webkit-transform: translate(0px, -4px);
+    -ms-transform: translate(0px, -4px);
+    transform: translate(0px, -4px);
+    color: #9c9c9c;
+}
+
+.feature-title{
+    font-size: 1.75rem;
+    font-weight: 900;
+    font-family: 'Poppins';
+    color: #c4c4c4;
+    margin-bottom: 1.8rem;
+}
+
+.feature-text{
+
+    padding: 0 30px;
+}
+
+/* Designs Section */
+#designs{
+    color: #4d4d4d;
+    text-align: center;
+    background: #C2B092;
+}
+
+.design-img{
+    width: 400px;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.design-repo-btn{
+    margin: 0px;
+}
+
+.carousel-item{
+    padding: 7% 15%; /* 7% top and bottom | 15% left and right */
+}
+
+.carousel-control-next, .carousel-control-prev {
+    color:#4d4d4d;
+}
+
+/* tech section */
+
+#tech{
+    background: #2B2B2B;
+    color: #fff;
+    padding: 100px;
+}
+
+#tech .row{
+    color: #4d4d4d;
+}
+
+.card{
+    border: 6px solid #db4b4b;
+    border-radius: 15px;
+}
+
+.card-header{
+    background: #db4b4b;
+    color: #fff;
+}
+
+/* footer */
+#footer{
+    background: #151515;
+    padding: 30px;
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+}
+
