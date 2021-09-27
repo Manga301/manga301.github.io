@@ -130,9 +130,10 @@ h2{
 
 /* Designs Section */
 #designs{
-    color: #4d4d4d;
+    color: #fff;
     text-align: center;
-    background: #C2B092;
+    background: linear-gradient(to top left, #1484F9 0%, #A066CB 100%);
+    /* background: #1484F9; */
 }
 
 .design-img{
