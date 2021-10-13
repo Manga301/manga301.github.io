@@ -1,5 +1,6 @@
 'use strict'
 
+// quotes source: https://medium.com/stories-by-aurora-e/20-stoic-quotes-that-will-motivate-and-inspire-you-bfb4fc7fc660 
 const quotes = 
 ['Waste no more time arguing what a good man should be. Be One. — Marcus Aurelius', 
 'You could leave life right now. Let that determine what you do and say and think.—Marcus Aurelius', 
@@ -22,19 +23,40 @@ const quotes =
 'If you want to improve, be content to be thought foolish and stupid.―Epictetus',
 'Luck is what happens when preparation meets opportunity.―Seneca'];
 
-let randQuote = Math.trunc(Math.random() * quotes.length);
+// randomly generated quotes from the quotes array
+const randQuote = Math.trunc(Math.random() * quotes.length);
+
 
 document.querySelector('.quotes').innerHTML = `"${quotes[randQuote]}"`;
 
-
 // function expression displays life in months 
 const displayLifeInWeeks = function(){
+
+    // declare age variables
     const currentAge = Number(document.querySelector('#current-age').value);
     const desiredExpiryAge = Number(document.querySelector('#desired-expiry-age').value);
 
+    // check for valid inputs
+    if(currentAge === '' || currentAge === 0 && desiredExpiryAge === '' || desiredExpiryAge === 0){
+        document.querySelector('.modal-body').textContent = `looks like you're imortal...`;
+    } else{ 
     // console.log(`Current age: ${currentAge}, Desired expiry age: ${desiredExpiryAge}`);
     document.querySelector('.modal-body').textContent = `You have ${(desiredExpiryAge  * 12) - (currentAge * 12)} months to go`;
 }
 
+}
+
+// reset input fields
+const resetInputFields = function(){
+    document.querySelector('#current-age').value = '';
+    document.querySelector('#desired-expiry-age').value = '';
+
+    console.log('cleared...');
+}
+
 // btn event listener 
 document.querySelector('.life-check').addEventListener('click', displayLifeInWeeks);
+
+// modal close event listener
+document.querySelector('.reset-input-fields-x').addEventListener('click', resetInputFields);
+document.querySelector('.reset-input-fields-close').addEventListener('click', resetInputFields);
