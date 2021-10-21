@@ -1,6 +1,7 @@
 'use strict'
 
 // quotes source: https://medium.com/stories-by-aurora-e/20-stoic-quotes-that-will-motivate-and-inspire-you-bfb4fc7fc660 
+// quote source: 
 const quotes = 
 ['Waste no more time arguing what a good man should be. Be One. — Marcus Aurelius', 
 'You could leave life right now. Let that determine what you do and say and think.—Marcus Aurelius', 
@@ -21,7 +22,21 @@ const quotes =
 'The key is to keep company only with people who uplift you, whose presence calls forth your best.―Epictetus',
 'The happiness of your life depends upon the quality of your thoughts.―Marcus Aurelius',
 'If you want to improve, be content to be thought foolish and stupid.―Epictetus',
-'Luck is what happens when preparation meets opportunity.―Seneca'];
+'Luck is what happens when preparation meets opportunity.―Seneca',
+'Just keep in mind, the more we value things outside our control, the less control we have.-Epictetus',
+'The whole future lies in uncertainty, live immediately.-Seneca',
+'A gem cannot be polished without friction, nor a man perfected without trials.-Seneca',
+'He has the most who is content with the least.-Diogenes',
+'Self-control is strength. Right thought is mastery. Calmness is power.-James Allen',
+'Man conquers the world by conquering himself.-Zeno of Citium',
+'When someone is properly grounded in life, they shouldn’t have to look outside themselves for approval.-Epictetus',
+'The ultimate power in life is to be completely self-reliant, completely yourself.-Robert Greene',
+'Between stimulus and response, there is a space. In that space is our power to choose our response.-Viktor Frankl',
+'The first rule is to keep an untroubled spirit. The second is to look things in the face and know them for what they are.-Marcus Aurelius',
+'Sometimes life hits you in the head with a brick. Don’t lose faith.-Steve Jobs',
+'The art of being wise is the art of knowing what to overlook.-William James',
+'What we fear doing most is usually what we most need to do.-Tim Ferriss'
+];
 
 // randomly generated quotes from the quotes array
 const randQuote = Math.trunc(Math.random() * quotes.length);
